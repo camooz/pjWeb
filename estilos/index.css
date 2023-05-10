@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#banner {
+  background-color: #808080f8;
+  width: 100%;
+  padding: 5rem;
+}
+
+#banner > h1,
+#pata {
+  display: flex;
+  justify-content: center;
+}
+
+#navbar {
+  text-align: center;
+  background-color: #808080c9;
+}
+
+#navbar ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  display: block;
+  margin: 10px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#petsInfo {
+  margin-top: 1em;
+  border: 1px solid black;
+  padding-bottom: 40px;
+  box-shadow: 30px;
+  border-radius: 15px;
+}
+.pet {
+  grid-column: 1;
+  padding: 20px;
+  font-size: 18px;
+  height: 33vh;
+}
+
+.pet > ul > li {
+  font-size: 1.3rem;
+  list-style-type: none;
+  padding-bottom: 12px;
+}
+
+.Jana {
+  background-image: url("../imagens/gato1.jpg");
+  background-size: cover;
+  border-radius: 14px;
+  height: 100%;
+  width: 100%;
+}
+
+.Tchola {
+  background-image: url("../imagens/cachorro1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  border-radius: 14px;
+  height: 100%;
+  width: 100%;
+}
