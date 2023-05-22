@@ -48,20 +48,45 @@
 
         <div class="pet">
             <ul>
-                <li>Nome: Tchola</li>
+                <li>Nome: Goku</li>
                 <li>Idade: 6 meses</li>
-                <li>Sobre mim: Tchola é um cachorro filhote de 6 meses, cheio de energia e entusiasmo pela vida. Ela provavelmente está em uma fase de muita exploração e descoberta do mundo ao seu redor, brincando muito e aprendendo novos comandos de treinamento. É provável que ela precise de muita atenção e cuidados, incluindo passeios regulares e supervisão para evitar acidentes e comportamentos indesejados. Seu dono deve estar ansioso para assistir Tchola crescer e se desenvolver em um cachorro feliz e saudável.</li>
+                <li>Sobre mim: Goku é um cachorro filhote de 6 meses, cheio de energia e entusiasmo pela vida. Ela provavelmente está em uma fase de muita exploração e descoberta do mundo ao seu redor, brincando muito e aprendendo novos comandos de treinamento. É provável que ela precise de muita atenção e cuidados, incluindo passeios regulares e supervisão para evitar acidentes e comportamentos indesejados. Seu dono deve estar ansioso para assistir Goku crescer e se desenvolver em um cachorro feliz e saudável.</li>
             </ul>
-            <a href="mailto:teste@gmail.com?Subject=Adoção Tchola" target="_top">Me adote</a>
+            <a href="mailto:teste@gmail.com?Subject=Adoção Goku" target="_top">Me adote</a>
             
         </div>
 
-        <div class="Tchola"></div>
+        <div class="Goku"></div>
 
         
 
 
     </div>
+    <script>
+
+        const linksAdocao = document.querySelectorAll('a[href^="mailto"]');
+
+        linksAdocao.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                alert("Obrigado por querer me adotar!");
+            });
+        });
+
+        const petInfo = document.querySelectorAll('.pet');
+        petInfo.forEach(function(pet) {
+            const infoToggle = pet.querySelector('ul');
+            infoToggle.style.display = 'none';
+
+            pet.addEventListener('click', function() {
+                if (infoToggle.style.display === 'none') {
+                    infoToggle.style.display = 'block';
+                } else {
+                    infoToggle.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
 </body>
 
