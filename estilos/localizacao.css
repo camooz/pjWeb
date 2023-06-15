@@ -5,7 +5,8 @@
 }
 
 #banner {
-  background-color: #808080f8;
+  background-color: #9A48D0;
+  color: #F6EFFB;
   width: 100%;
   padding: 5rem;
 }
@@ -18,7 +19,23 @@
 
 #navbar {
   text-align: center;
-  background-color: #808080c9;
+  background-color: #63458A;
+  color: #F6EFFB;
+}
+
+#navbar a:link, a:visited {
+	color: #F6EFFB;
+	text-decoration: none;
+}
+
+#navbar a:hover,  {
+	color: #E3CEF3;
+	text-decoration: none;
+}
+
+#navbar a:active {
+	color: #C79CE7;
+	text-decoration: none;
 }
 
 #navbar ul {
